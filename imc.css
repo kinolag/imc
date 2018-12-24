@@ -1,0 +1,267 @@
+body {  
+  font-size: 100%;
+  margin: 0px 0px 0px 0px;
+  background-color: #000011;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) { body { font-size: 90%; } }
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+header {
+  height: 50px;
+  padding: 6px;
+  color: #FFCC00;
+  background: #111111; 
+}
+
+.row {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around; 
+  align-items: center;
+  text-align: center;
+  background: #000011; 
+}
+
+.img_car {
+    width: 52vw;
+    margin: 10px 15px 10px 15px; 
+    border: 2px solid darkslategrey; 
+    border-radius: 14px;
+    transform: scale(0.94);
+    transition: all ease-in-out 0.3s;
+    animation-name: fade_loop;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fade_loop {
+    0% {opacity: 0.58;}
+    50% {opacity: 0.93}
+    100% {opacity: 0.58;}
+  }
+
+.img_car:hover {
+    border: 2px solid slategrey;
+    border-radius: 0px;
+    animation-play-state: paused;
+    /*opacity: 1;*/
+    transform: scale(1);
+}
+
+#arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 6vh solid transparent;
+    border-bottom: 6vh solid transparent;
+    border-left: 5vw solid darkslategrey;
+    border-radius: 6px;
+}
+
+#arrow-right:hover {
+	border-left: 5vw solid slategrey;
+}
+
+#arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 6vh solid transparent;
+    border-bottom: 6vh solid transparent; 
+    border-right: 5vw solid darkslategrey; 
+    border-radius: 6px;
+}
+
+#arrow-left:hover {
+	border-right: 5vw solid slategrey;
+}
+
+#arrow-play {
+  width: 0; 
+  height: 0; 
+  margin: 3vw 2.5vw 0vw 2.5vw; 
+  border-top: 2.5vw solid transparent;
+  border-bottom: 2.5vw solid transparent;
+  border-left: 3vw solid darkslategrey;
+  border-radius: 4px;
+}
+
+#arrow-play:hover {
+  border-left: 3vw solid slategrey;
+}
+
+#square-stop {
+  width: 5vw;
+  height: 5vw;
+  margin: 3vw 2.5vw 0vw 2.5vw; 
+  border-radius: 4px;
+  background-color: darkslategrey;
+}
+
+#square-stop:hover {
+  background-color: slategrey;
+}
+
+p {
+  width:62vw;
+  text-align: justify;
+  padding: 20px 25px 20px 25px; 
+  margin-bottom: 24px; 
+  background: #191922;
+  border-radius: 10px;
+  /*border: 1px solid darkslategrey;*/
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) { #keys { display: none; } }
+
+#keys{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 1px dashed;
+  margin: 24px 12px 36px 12px;
+  padding: 4px 8px 4px 8px;
+  color: darkslategrey;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+
+#keys:after{
+  content:'key controls';  
+}
+
+#keys:hover:after{
+  content:'\2190  1  0  \2192';
+}
+/* content:'\2190  (prev) 1  (slide) 0  (stop)  \2192  (next)'; */
+
+
+/* new links */
+
+.A1n{
+  text-decoration: underline;
+  font-size: 1em; /* relative */
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: slategrey;
+  letter-spacing: 0.12em;
+}
+
+.A1n:hover {
+	text-decoration: none;
+	color: #FF5000;
+}
+
+/* colour text classes */
+
+.A_m {
+	text-decoration: underline;
+	font-size: medium;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFCC00;
+}
+
+.A_m:hover {
+	text-decoration: none;
+	color: #FF5000;
+}
+
+.A_s {
+	text-decoration: underline;
+	font-size: small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFCC00;
+}
+
+.A_s:hover {
+	text-decoration: none;
+	color: #FF5000;
+}
+
+.A_g4_m {
+	text-decoration: underline;
+	font-size: medium;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #444444;
+}
+
+.A_g4_m:hover {
+	text-decoration: none;
+	color: #FF5000;
+}
+
+.A_g6_m {
+	text-decoration: underline;
+	font-size: medium;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+.A_g6_m:hover {
+	text-decoration: none;
+	color: #FF5000;
+}
+
+
+.arancio_m {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: normal;	
+	color: #FF8000;
+}
+
+.arancio_s {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	color: #FF8000;
+}
+
+.giallo_m {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+	color: #FFCC00;
+}
+
+.giallo_s {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	color: #FFCC00;
+}
+
+.grigio_4_m {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+	color: #444444;
+}
+
+.grigio_4_s {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	color: #444444;
+}
+
+.grigio_6_m {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+	color: #666666;
+}
+
+.grigio_6_s {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+	color: #666666;
+}
